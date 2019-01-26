@@ -12,7 +12,8 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
-
+Binary/
+.vs/
 # Build results
 [Dd]ebug/
 [Rr]elease/
