@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\devel\testing_sek\src\third_party\FastColoredTextBox\Tester - Copy\TabStrip.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{900080C4-65B4-49F3-9E77-421C4A4D15D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TabStrip</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <ApplicationVersion>2.0.2523.29272</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>FarsiLibrary.Win</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binary\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HitTestResult.cs" />
+    <Compile Include="ThemeTypes.cs" />
+    <Compile Include="FATabStripItemChangeTypes.cs" />
+    <Compile Include="FATabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabStripItemClosingEventArgs.cs" />
+    <Compile Include="TabStripItemChangedEventArgs.cs" />
+    <Compile Include="TabStripItemChangedHandler.cs" />
+    <Compile Include="TabStripItemClosingHandler.cs" />
+    <Compile Include="FATabStripCloseButton.cs" />
+    <Compile Include="FATabStripMenuGlyph.cs" />
+    <Compile Include="FATabStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FATabStripItemCollection.cs" />
+    <Compile Include="BaseClasses\BaseStyledPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ICaptionSupport.cs" />
+    <Compile Include="Design\FATabStripItemDesigner.cs" />
+    <Compile Include="Design\FATabStripDesigner.cs" />
+    <Compile Include="Helpers\CollectionClear.cs" />
+    <Compile Include="Helpers\CollectionChange.cs" />
+    <Compile Include="Helpers\CollectionWithEvents.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FATabStrip.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
